@@ -2,7 +2,7 @@
   <img src="assets/icons/applogo.png" alt="GridXenergy stylized X logo" width="200" />
 </p>
 
-# PowerPod Platform
+# PowerPod Platform App
 
 **PowerPod Platform** is the companion app for teams working with **GridX** batteries on **electric two-wheelers (2W)**. If you have purchased GridX packs for development and integration of your vehicle, this app helps you stay connected to your **PowerPod**: see status and diagnostics, use **Platform Tools** for deeper insight when you are next to the battery, and work through bring-up and testing with a clear, purpose-built experience.
 
