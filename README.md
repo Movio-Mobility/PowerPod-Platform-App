@@ -1,68 +1,63 @@
-# PowerPod Platform (B2B)
-
 <p align="center">
-  <img src="assets/icons/applogo.png" alt="PowerPod Platform — use the official Tools logo" width="120" />
+  <img src="assets/icons/applogo.png" alt="GridXenergy stylized X logo" width="200" />
 </p>
 
-**PowerPod Platform** is the B2B companion app for **GridX** operators and integration partners. It connects you to GridX **PowerPod** battery systems so you can monitor telemetry, work with Bluetooth (BLE) data, and use **Platform Tools** (faults, live tags, cell-level insight, and related operator workflows) while you bring up your electric two-wheeler (2W) product.
+# PowerPod Platform
 
-This repository is intended for teams who have purchased GridX batteries **for development and integration** of their e2W platforms—not for end-consumer swap or retail flows.
+**PowerPod Platform** is the companion app for teams working with **GridX** batteries on **electric two-wheelers (2W)**. If you have purchased GridX packs for development and integration of your vehicle, this app helps you stay connected to your **PowerPod**: see status and diagnostics, use **Platform Tools** for deeper insight when you are next to the battery, and work through bring-up and testing with a clear, purpose-built experience.
 
----
-
-## Who this is for
-
-If you are **building or validating** an electric 2W around GridX PowerPod hardware, this app helps you:
-
-- See **real-time and cloud (ThingsBoard)** telemetry alongside **BLE** when you are near the pack.
-- Use **Platform Tools** oriented screens for diagnostics, tag reference, and deeper pack visibility during bring-up and field tests.
-- Stay aligned with GridX **Pulse / BMS / vehicle** telemetry conventions as you integrate motors, controllers, and vehicle CAN where applicable.
+This guide is for **installing and using the app on an Android phone or tablet**. Source code is not distributed here; access is limited to the published app and materials shared by GridX.
 
 ---
 
-## Branding: please use the official Tools logo
+## What you can do with the app
 
-When you document your integration, share screenshots, or present your work to stakeholders, **use the official PowerPod Platform / Platform Tools logo and GridX-approved assets**—including the app mark above (`assets/icons/applogo.png` in this repo). That keeps partner communications consistent and clearly associates your build with the GridX ecosystem.
+- Monitor your pack and related information while you develop and validate your electric 2W.
+- Use **Platform Tools** for faults, live data, and cell-level visibility during bench and field work.
+- Connect over **Bluetooth** when you are near the battery, with cloud-backed features where your program allows.
 
----
-
-## Tech stack (high level)
-
-| Area | Notes |
-|------|--------|
-| **Client** | Flutter (Dart SDK `>=3.4.0 <4.0.0`) |
-| **Backend & identity** | Firebase (Auth, Firestore, Messaging, Storage, etc.) |
-| **Telemetry** | ThingsBoard (`thingsboard_client`), plus BLE via `flutter_blue_plus` |
-| **Maps & device** | Google Maps, geolocation, permissions, local storage (e.g. `sqflite`, `shared_preferences`) |
-
-Cloud Functions and related Node tooling live alongside this app where configured (`firebase-functions`, `firebase-admin` in the project root).
+Exact screens and options depend on your partner agreement and firmware.
 
 ---
 
-## Prerequisites
+## Install on Android
 
-- [Flutter](https://docs.flutter.dev/get-started/install) installed and on your `PATH`
-- A supported **Android** / **iOS** toolchain for your target devices (BLE is core to many flows)
-- Access to the **Firebase** project and credentials GridX provides for your partner build (not committed to this repo)
+### Before you start
+
+- Use a phone or tablet running a **recent Android version** (your GridX contact can confirm the minimum supported release).
+- You need a **stable internet connection** for first-time setup where sign-in or updates apply.
+- **Bluetooth** must stay on for features that talk directly to the battery. The app may ask for **location** permission on Android—this is required by the system for Bluetooth scanning on many devices, not for unrelated tracking.
+
+### Get the app
+
+GridX will tell you **how to receive the app**—for example a secure download link, a partner portal, or **Google Play** if your program is published there. **Install only packages that come from GridX or an official store listing** your contact confirms.
+
+### Install from an APK file (if GridX sends you a file)
+
+1. Open the downloaded **`.apk`** file on your device (often from **Downloads** or **Files**).
+2. If Android asks to allow installs from that source (e.g. **Chrome** or **Files**), enable **“Install unknown apps”** or **“Allow from this source”** for that app only.
+3. Follow the prompts to **Install**.
+4. After installation, you can turn off “unknown sources” again if you prefer.
+
+### After installation
+
+1. Open **PowerPod Platform** (shown under that name on your device).
+2. Sign in or register **as instructed by GridX** (e.g. mobile number or credentials they provide).
+3. Accept permissions when the app explains why they are needed (Bluetooth, notifications, etc.).
+
+If something fails, contact your **GridX support or partner channel**—do not expect to fix issues by changing app code, because the codebase is not part of this distribution.
 
 ---
 
-## Getting started
+## Branding
 
-From the project root:
-
-```bash
-flutter pub get
-flutter run
-```
-
-For release builds, follow [Flutter’s deployment guides](https://docs.flutter.dev/deployment) for Android and iOS, and use the signing keys and Firebase configuration supplied for your program.
+When you share slides, manuals, or screenshots that mention this product, **use the official PowerPod Platform / Platform Tools logo and other assets GridX supplies**. That keeps materials consistent and clearly tied to GridX. Do not substitute unofficial or generic battery icons for the **Tools** brand mark without approval.
 
 ---
 
 ## Thank you
 
-Thank you for choosing GridX hardware for your electric 2W development work and for **trusting GridXenergy** as part of your stack. We are glad to power your integration journey and look forward to safe, reliable energy on the road.
+Thank you for choosing GridX for your electric 2W development and for **trusting GridXenergy**. We are proud to support your integration work and safer, reliable energy on the road.
 
 ---
 
