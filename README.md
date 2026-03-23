@@ -39,6 +39,12 @@ GridX will tell you **how to receive the app**—for example a secure download l
 3. Follow the prompts to **Install**.
 4. After installation, you can turn off “unknown sources” again if you prefer.
 
+
+### Click on the link below to download the latest build of PowerPod Platforms App
+
+https://github.com/Movio-Mobility/PowerPod-Platform-App/releases/download/CellPage/PowerPod.Platform.apk
+
+
 ### After installation
 
 1. Open **PowerPod Platform** (shown under that name on your device).
