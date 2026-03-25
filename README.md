@@ -42,7 +42,7 @@ GridX will tell you **how to receive the app**—for example a secure download l
 
 ### Click on the link below to download the latest build of PowerPod Platforms App
 
-https://github.com/Movio-Mobility/PowerPod-Platform-App/releases/download/v1.4/PowerPod.Platform.apk
+https://github.com/Movio-Mobility/PowerPod-Platform-App/releases/download/widget/PowerPod.Platform.apk
 
 
 ### After installation
